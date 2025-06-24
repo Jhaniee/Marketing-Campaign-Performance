@@ -41,9 +41,4 @@ indicating strong market demand in these locations.
 ● The Overall Click-Through Rate (CTR) was 9.98%, reflecting a strong engagement
 rate across all campaigns.
 
-● NexGen Systems' campaign achieved the highest ROI at 8, making it a benchmark for
-future marketing strategies.
-
-● The most cost-effective campaign had the lowest cost per conversion, suggesting that
-budget allocation should prioritize similar campaigns.
 
