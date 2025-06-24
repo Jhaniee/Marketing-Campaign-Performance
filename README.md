@@ -7,11 +7,17 @@ cost-effective marketing channels to guide future marketing strategies.
 
 #### Key Questions Addressed:
 ● Which campaigns had the highest impressions?
+
 ● Which campaign achieved the highest Return on Investment (ROI)?
+
 ● What are the top locations generating the most impressions?
+
 ● How does engagement score vary by target audience?
+
 ● What is the overall Click-Through Rate (CTR)?
+
 ● Which campaign was the most cost-effective?
+
 ● Which marketing channels generated the most conversions?
 
 ### Data Source
@@ -22,10 +28,13 @@ dataset was provided in a google sheet format, and it serves as the foundation f
 ### Key Findings
 The analysis of the Marketing Campaign Dataset provided valuable insights into campaign
 performance, audience engagement, and cost-effectiveness. Key findings include:
+
 ● Google Ads had the highest total conversions (14,804,993.60), making it the most
 effective marketing channel.
+
 ● New York led with 221,359,756 impressions, followed by Miami and Chicago,
 indicating strong market demand in these locations.
+
 ● The Overall Click-Through Rate (CTR) was 9.98%, reflecting a strong engagement
 rate across all campaigns.
 ● NexGen Systems' campaign achieved the highest ROI at 8, making it a benchmark for
