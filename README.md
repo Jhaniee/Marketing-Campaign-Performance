@@ -1,5 +1,8 @@
 # Market Campaign Performance
 
+![image](https://github.com/user-attachments/assets/c5130bfd-6220-4385-a08c-cd365ba40b08)
+
+
 This report presents an analysis of marketing campaign performance based on SQL queries
 executed on the Marketing Campaign Dataset. The objective is to extract meaningful insights
 such as identifying top-performing campaigns, high-converting locations, and the most
@@ -37,8 +40,10 @@ indicating strong market demand in these locations.
 
 ● The Overall Click-Through Rate (CTR) was 9.98%, reflecting a strong engagement
 rate across all campaigns.
+
 ● NexGen Systems' campaign achieved the highest ROI at 8, making it a benchmark for
 future marketing strategies.
+
 ● The most cost-effective campaign had the lowest cost per conversion, suggesting that
 budget allocation should prioritize similar campaigns.
 
