@@ -1,0 +1,71 @@
+--  Table creation and Data Import
+CREATE TABLE campaigndata(
+	Campaign_ID INT,
+	Company TEXT,
+	Campaign_Type TEXT,
+	Target_Audience TEXT,
+	Duration TEXT,
+	Channel_Used TEXT,
+	Conversion_Rate NUMERIC,
+	Acquisition_Cost MONEY,
+	ROI NUMERIC,
+	Location TEXT,
+	Date TEXT,
+	Clicks INT,
+	Impressions INT,
+	Engagement_Score NUMERIC,
+	Customer_Segment TEXT
+);
+
+
+--Analysis
+-- Total Impressions for Each Campaign
+SELECT campaign_id, SUM(impressions) AS totalimpressions
+FROM campaigndata
+GROUP BY campaign_id;
+
+--Campaign with the Highest ROI
+FROM campaigndata
+ORDER BY roi DESC
+LIMIT 1;
+
+--Top 3 Locations with the Most Impressions
+SELECT location,
+
+SUM(impressions) AS totalimpressions
+FROM campaigndata
+GROUP BY location
+ORDER BY totalimpressions DESC
+LIMIT 3;
+
+--Average Engagement Score by Target Audience
+SELECT target_audience,
+	AVG(engagement_score) AS avgengagementscore
+FROM campaigndata
+GROUP BY target_audience;
+
+--Overall Click-Through Rate (CTR)
+SELECT (SUM(clicks)*1.0/SUM(impressions))*100 AS overallcrt
+FROM campaigndata;
+
+--Most Cost-Effective Campaign
+SELECT campaign_id, company,
+	(acquisition_cost:: NUMERIC/ conversion_Rate) AS
+	costperconversion
+FROM campaigndata
+ORDER BY costperconversion ASC
+LIMIT 1;
+
+--Campaigns with CTR Above a Threshold (5%)
+SELECT Campaign_ID,
+	Company,
+	((clicks*1.0)/impressions)*100 AS ctr
+FROM campaigndata
+WHERE (Clicks * 1.0 / Impressions) * 100 > 5
+
+--Ranking Channels by Total Conversions
+SELECT channel_used,
+SUM(conversion_rate * impressions) AS totalconversions
+FROM campaigndata
+GROUP BY channel_used
+ORDER BY totalconversions DESC;
